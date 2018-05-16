@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AccessReadCode</string>
+    <string name="accessibility_service_description">获取验证码</string>
+    <string name="accessibility_service_label">验证码</string>
+</resources>
