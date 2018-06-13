@@ -77,12 +77,16 @@ public class CodeAccessibilityService extends AccessibilityService {
                 result.enqueue(new Callback<BaseBean>() {
                     @Override
                     public void onResponse(Call<BaseBean> call, Response<BaseBean> response) {
-                        Log.d("response", response.body().content.toString());
+                        try{ Log.d("response", response.body().content.toString());}catch (Exception e) {
+
+                        }
                     }
 
                     @Override
                     public void onFailure(Call<BaseBean> call, Throwable t) {
-                        Log.e("error", t.getMessage());
+                        try{Log.e("error", t.getMessage());}catch (Exception e) {
+
+                        }
                     }
 
                 });
